@@ -5,14 +5,16 @@ class ClickityClick extends React.Component {
   constructor() {
     super();
  
-    // Define the initial state:
+   
     this.state = {
       hasBeenClicked: false,
     };
   }
  
   handleClick = () => {
-    // Update our state here...
+this.setState({
+    hasBeenClicked: true
+  })
   }
  
   render() {
